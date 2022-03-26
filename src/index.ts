@@ -14,5 +14,9 @@ if (inputText) {
 //Actualizar divResult
 const divResult = <HTMLDivElement>document.getElementById('divResult');
 if (divResult){
-    
+    if(bPalindrome){
+        divResult.innerText = "The word is palindrome!"
+    } else {
+        divResult.innerText = "The word is not palindrome, sorry!"
+    }
 }
